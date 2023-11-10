@@ -6,10 +6,6 @@ plugins {
 group = "me.allin327"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
-}
-
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
     targetHierarchy.default()
