@@ -28,7 +28,7 @@ kotlin {
 
     // native平台
     val hostOs = System.getProperty("os.name")
-    val isArm64 = System.getProperty("os.arch") == "aarch64"
+    val isArm64 = System.getProperty("nativeType") == "macArm"
     val isMingwX64 = hostOs.startsWith("Windows")
     val nativeTarget = when {
         hostOs == "Mac OS X" && isArm64 -> macosArm64("nativePc")
